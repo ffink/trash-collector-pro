@@ -10,13 +10,18 @@ def get_downloads_path():
     return downloads_path
 
 
-def get_old_downloads():
+def get_downloads():
     all_downloads = os.listdir(get_downloads_path())
+    return all_downloads
+
+
+def clean():
     print('The following files were modified more than 30 days ago and will be removed:')
-    for file in all_downloads:
+    for file in get_downloads():
         modify_time = os.path.getmtime(os.path.join(get_downloads_path(),file))
         days_old = (time.time() - modify_time) / 86400
         if days_old > 30:
-            print(file)
+            print(file + ' - ' + str(days_old))
 
-get_old_downloads()
+
+clean()
