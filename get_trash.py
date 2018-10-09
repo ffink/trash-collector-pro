@@ -18,3 +18,5 @@ def get_old_downloads():
         days_old = (time.time() - modify_time) / 86400
         if days_old > 30:
             print(file)
+
+get_old_downloads()
