@@ -8,4 +8,4 @@ Clone the repo, or just grab `clean_up.py` and run it in a command line. Oh, and
 
 ## Roadmap
  - Cron to schedule a regular cleaning
- - Prompt for confirmation prior to cleaning
+ - Remove non-empty directories
