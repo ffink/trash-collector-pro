@@ -6,6 +6,6 @@ A simple python script to remove files older than `x` number of days (30 by defa
 
 Clone the repo, or just grab `clean_up.py` and run it in a command line. Oh, and save it somewhere other than your downloads folder in order to avoid a cannibalistic disaster of irreparable scale.
 
-## Roadmap
- - Cron to schedule a regular cleaning
- - Remove non-empty directories
+## Caveats
+ - macOS friendly, for now
+ - `crontab` not included. As is, must be run manually.
