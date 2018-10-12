@@ -35,7 +35,7 @@ def clean():
                 modify_time = os.path.getmtime(os.path.join(get_downloads_path(),file))
                 days_old = (time.time() - modify_time) / 86400
                 if days_old > 30:
-                    directory_response = raw_input('Warning: ' + file + 'is a directory. All contents will be deleted. Confirm? (y/n) ')
+                    directory_response = raw_input('Warning: ' + file + ' is a directory. All contents will be deleted. Confirm? (y/n) ')
                     if directory_response == 'y' or directory_response == 'yes':
                         shutil.rmtree(os.path.join(get_downloads_path(),file))
                     elif directory_response == 'n' or directory_response == 'no':
