@@ -8,4 +8,4 @@ Clone the repo, or just grab `clean_up.py` and run it in a command line. Oh, and
 
 ## Caveats
  - macOS friendly, for now
- - `crontab` not included. As is, must be run manually.
+ - byo `crontab`
